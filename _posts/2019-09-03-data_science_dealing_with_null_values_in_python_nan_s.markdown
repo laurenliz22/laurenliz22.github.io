@@ -6,11 +6,11 @@ permalink:  data_science_dealing_with_null_values_in_python_nan_s
 ---
 
 
-I’ve just completed my first data science project and have decided to write about one of the first tasks I completed: dealing with null values!
+I’ve just finished my first data science project and have decided to write about one of the first tasks I completed: dealing with null values!
 
-Please note, for the purpose of this blog I will using the “House Sales in King County, USA” dataset to assist with my examples.  This dataset can be found on kaggle.com if you want to code along!* 
+Please note, for the purpose of this blog I will be using the “House Sales in King County, USA” dataset to assist with my examples.  This dataset can be found on kaggle.com if you want to code along!* 
 
-After loading in my dataset, and initially naming my dataset = “data”, I immediately started looking at what my dataset contained.  Typing into Python ```data.info() ``` I could view a list of each column within the data set, the total number of non-null values within each column and the data type of each column.  Please note, for the purposes of this blog each column we will be looking at will be continuous.  While the information I get from using ```data.info() ``` is extremely helpful, when dealing particularly with null values, I’ve found it an easier to view which columns contain null values by using ```data.isna().sum()```  as well.  Using  ```data.isna().sum()``` I am able to see the total number of null values for each column, rather then having to look through and see which columns less non-null values has then the total count, which can be quite overwhelming on my eyes.    
+After loading in the dataset, and giving it an intial name of  “data”, I immediately started looking at what the dataset contained.  Typing into Python ```data.info() ``` I was able to view a list of each column within the dataset, the total number of non-null values within each column and the data type of each column.  Please note, for the purposes of this blog each column we will be looking at will be continuous.  While the information I received from using ```data.info() ``` is extremely helpful, when dealing particularly with null values, I’ve found it easier to view which columns contain null values by using ```data.isna().sum()``` .  Using  ```data.isna().sum()``` I am able to see the total number of null values for each column, rather then having to look through to see which columns have less non-null values then the total count, which can be quite overwhelming on my eyes.    
 
 Please look at an example of each output below and you’ll be able to see what I’m talking about.  
 
