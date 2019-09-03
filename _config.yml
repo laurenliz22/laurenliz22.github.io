@@ -1,11 +1,11 @@
 # Site settings
 author: Lauren Aronson
-title: 
+title: Lauren Writes
 header-img: img/home-bg.png
 email: lauren.e.aronson@gmail.com
 copyright_name: Lauren Aronson
 description: > # this means to ignore newlines until "baseurl:"
-  
+  My Data Science Adventure
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  laurenliz22
