@@ -17,7 +17,7 @@ Please look at an example of each output below and you’ll be able to see what 
 ```data.info() ```:
 
  
-![](<blockquote class="imgur-embed-pub" lang="en" data-id="a/XlBMNFh" data-context="false" ><a href="//imgur.com/a/XlBMNFh"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>)
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/ySJz5cr" data-context="false" ><a href="//imgur.com/a/ySJz5cr"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 ```data.isna().sum()```:
 
