@@ -17,11 +17,11 @@ Please look at an example of each output below and you’ll be able to see what 
 ```data.info() ```:
 
  
-![](<blockquote class="imgur-embed-pub" lang="en" data-id="a/tq9FZN4" data-context="false" ><a href="//imgur.com/a/tq9FZN4"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>)
+![](<blockquote class="imgur-embed-pub" lang="en" data-id="a/XlBMNFh" data-context="false" ><a href="//imgur.com/a/XlBMNFh"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>)
 
 ```data.isna().sum()```:
 
- ![](/Users/lauren/Desktop/Screen Shot 2019-09-03 at 9.57.02 AM.png)
+ ![](<blockquote class="imgur-embed-pub" lang="en" data-id="a/Vy3RCKZ" data-context="false" ><a href="//imgur.com/a/Vy3RCKZ"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>)
 
 Don’t you agree that It is much easier to see that waterfront, view and yr_renovated all contain null values in the second output compared to the first output?  Now on to dealing with these null values!
 
