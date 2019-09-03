@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Data Science: Dealing with Null Values in Python (NaN’s)"
-date:       2019-09-03 18:22:24 +0000
+date:       2019-09-03 14:22:24 -0400
 permalink:  data_science_dealing_with_null_values_in_python_nan_s
 ---
 
@@ -17,7 +17,7 @@ Please look at an example of each output below and you’ll be able to see what 
 ```data.info() ```:
 
  
-![](/Users/lauren/Desktop/Screen Shot 2019-09-03 at 9.55.38 AM.png)
+![](<blockquote class="imgur-embed-pub" lang="en" data-id="a/tq9FZN4" data-context="false" ><a href="//imgur.com/a/tq9FZN4"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>)
 
 ```data.isna().sum()```:
 
@@ -31,11 +31,11 @@ The first method I use to help me do this is to determine the percentage of null
 
 ```
 yr_ren_null_percentage = str(round(len(data[data.yr_renovated.isna()]) / len(data),3)*100)
-wf_null_percentage = str(round(len(data[data.waterfront.isna()]) 
-    / len(data),3)*100)
-view_null_percentage = str(round(len(data[data.view.isna()]) 
-/len(data),3)*100)
+wf_null_percentage = str(round(len(data[data.waterfront.isna()]) / len(data),3)*100)
+view_null_percentage = str(round(len(data[data.view.isna()]) / len(data),3)*100)
+```
 
+```
 print('yr_ren percent null: ', yr_ren_null_percentage + '%')
 print('waterfront percent null: ', wf_null_percentage + '%')
 print('view percent null: ', view_null_percentage + '%')
@@ -62,27 +62,21 @@ print('unique yr_renovated values =', yr_ren_unique)
 
 STEP2: Look at a histogram plot for the column to determine the range of unique values 
 
-```
-data.yr_renovated.plot(kind = 'hist')
-```
+```data.yr_renovated.plot(kind = 'hist')```
 
 STEP3: Look at the counts of each unique value for the column to determine the largest to smallest
 
-```
-data.yr_renovated.value_counts()
-```
+```data.yr_renovated.value_counts()```
 
 STEP4: Determine the percentage of the first and second largest unique values for the column (for the example below yr_renovated largest value was 0.0 and second largest was 2014)
 
 ```
-yr_ren_zero = str(round((data[data['yr_renovated'] 
-== 0.0].count()['yr_renovated'] 
-                      / len(data)),2) * 100)
+yr_ren_zero = str(round((data[data['yr_renovated']  ==  0.0].count()['yr_renovated']  / len(data)),2) * 100)
 print('percentage of yr_renovated 0.0 values =', yr_ren_zero + '%')
+```
 
-yr_ren_2014 = str(round((data[data['yr_renovated'] 
-   == 2014].count()['yr_renovated'] 
-                        / len(data)),3) * 100)
+```
+yr_ren_2014 = str(round((data[data['yr_renovated'] == 2014].count()['yr_renovated'] / len(data)),3) * 100)
 print('percentage of yr_renovated 2014 values =', yr_ren_2014 + '%')
 ```
 
@@ -90,23 +84,17 @@ For this particular dataset I am able to see that most of my values are 0.0 for 
 
 Please note, before making any changes I will create a new dataframe since I am starting to manually make adjustments to my data.  I will name my new dataset  “data2”: ```data2 = data```.  Now that that’s taken care of, I will replace my null values with 0.0 for yr_renovated.
 
-```
-data2['yr_renovated'] = data2['yr_renovated'].fillna(value = 0.0)
-```
+```data2['yr_renovated'] = data2['yr_renovated'].fillna(value = 0.0)```
 
 And now yr_renovated will no longer contain those pesky null values!  
 
 If I instead decided to keep the null values for yr_renovated I would update my null values (NaN) to become a string (‘NaN’).
 
-```
-data2['yr_renovated'] = data2['yr_renovated'].fillna(value = ‘NaN’)
-```
+```data2['yr_renovated'] = data2['yr_renovated'].fillna(value = ‘NaN’)```
 
 Lastly, if I decided to remove the rows with null values, I would be able to do so using the formula below:
 
-```
-data2 = data2.dropna(subset=[‘yr_renovated’])
-```
+```data2 = data2.dropna(subset=[‘yr_renovated’])```
 
 Moving forward, I would now perform the same analysis for my other columns containing null values.  By the end of this exercise I will no longer have any null values in my data and be able to move forward cleaning, exploring and predicting a proper model!
 
