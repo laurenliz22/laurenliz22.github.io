@@ -21,7 +21,7 @@ Please look at an example of each output below and you’ll be able to see what 
 
 ```data.isna().sum()```:
 
- ![](<blockquote class="imgur-embed-pub" lang="en" data-id="a/Vy3RCKZ" data-context="false" ><a href="//imgur.com/a/Vy3RCKZ"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>)
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/Vy3RCKZ" data-context="false" ><a href="//imgur.com/a/Vy3RCKZ"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 Don’t you agree that It is much easier to see that waterfront, view and yr_renovated all contain null values in the second output compared to the first output?  Now on to dealing with these null values!
 
