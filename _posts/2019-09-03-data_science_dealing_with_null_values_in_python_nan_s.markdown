@@ -36,13 +36,17 @@ The first method I use to help me do this is to determine the percentage of null
 ```view_null_percentage = str(round(len(data[data.view.isna()]) / len(data),3)*100)```
 
 ```print('yr_ren percent null: ', yr_ren_null_percentage + '%')```
+
 ```print('waterfront percent null: ', wf_null_percentage + '%')```
+
 ```print('view percent null: ', view_null_percentage + '%')```
 
 The code above outputs the three very helpful lines below for my analysis:
 
 yr_ren percent null:  17.8%
+
 waterfront percent null:  11.0%
+
 view percent null:  0.3%
 
 These lines of code tell me the percentage of null values that exist in total based on each column of data.  While I need to look further into how to deal with each column, I do know that removing the rows with null values for the columns like yr_renovated and waterfront, that contain 10%-20% of null values, would be removing a large portion of my data and could cause a skew in my results.  On the other hand, if there was a larger percentage of null values in each column then I would consider removing the column altogether.  However, less than 20% is not too large of a percentage of null values so this is not the case for my dataset (and as a data scientist I know it can be risky for my model to delete out too much data).   
@@ -54,6 +58,7 @@ To further analyze the data in these columns, I’ll move from the largest to sm
 STEP1: Look at how many unique values exist for the column 
 
 ```yr_ren_unique = data['yr_renovated'].nunique()```
+
 ```print('unique yr_renovated values =', yr_ren_unique) ```
 
 STEP2: Look at a histogram plot for the column to determine the range of unique values 
@@ -64,7 +69,7 @@ STEP3: Look at the counts of each unique value for the column to determine the l
 
 ```data.yr_renovated.value_counts()```
 
-STEP4: Determine the percentage of the first and second largest unique values for the column (for the example below yr_renovated largest value was 0.0 and second largest was 2014)
+STEP4: Determine the percentage of the first and second largest unique values for the column (for the example below yr_renovated's largest value was 0.0 and second largest was 2014)
 
 ```yr_ren_zero = str(round((data[data['yr_renovated']  ==  0.0].count()['yr_renovated']  / len(data)),2) * 100)```
 
