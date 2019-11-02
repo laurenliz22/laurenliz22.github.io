@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "ARIMA Modeling and Train/Test Split"
-date:       2019-11-02 15:15:51 +0000
+date:       2019-11-02 11:15:52 -0400
 permalink:  arima_modeling_and_train_test_split
 ---
 
@@ -79,7 +79,7 @@ print(output_df_train.summary().tables[1])
 
 The code above will spit out a table with each coefficient, standard error, z-value, p-value and confidence intervals.  Each weight with a p-value less than 0.05 is significant to the model.
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/wGGnZkJ" data-context="false" ><a href="//imgur.com/a/wGGnZkJ"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/bW1SHmN" data-context="false" ><a href="//imgur.com/a/bW1SHmN"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 Lastly, you'll want to plot the diagnostics with the results to make sure the normality and correlation assumptions for the model hold.  The code below will provide you with 4 graphs (Standard residual and Correlogram to look at your correlation and Histogram plus estimated density and Normal Q-Q to look at normality)
 
