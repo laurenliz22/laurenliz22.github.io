@@ -79,7 +79,7 @@ print(output_df_train.summary().tables[1])
 
 The code above will spit out a table with each coefficient, standard error, z-value, p-value and confidence intervals.  Each weight with a p-value less than 0.05 is significant to the model.
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/KOAGxSN" data-context="false" ><a href="//imgur.com/a/KOAGxSN"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/iwsRH2U" data-context="false" ><a href="//imgur.com/a/iwsRH2U"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 Lastly, you'll want to plot the diagnostics with the results to make sure the normality and correlation assumptions for the model hold.  The code below will provide you with 4 graphs (Standard residual and Correlogram to look at your correlation and Histogram plus estimated density and Normal Q-Q to look at normality)
 
